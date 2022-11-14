@@ -1,0 +1,7 @@
+image: 
+  file: .gitpod.Dockerfile
+tasks:
+  - init: pipenv install
+
+ports:
+  - port: 8080
