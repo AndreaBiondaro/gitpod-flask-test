@@ -1,6 +1,5 @@
-image: gitpod/workspace-python-3.9:latest
 tasks:
-  - init: pipenv install
+  - init: pyenv install 3.10.7
 
 ports:
   - port: 8080
