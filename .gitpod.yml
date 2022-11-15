@@ -2,10 +2,10 @@ image: gitpod/workspace-python-3.10
 
 # List the start up tasks. Learn more https://www.gitpod.io/docs/config-start-tasks/
 tasks:
-  - init: echo 'init script' && pip install
-    command: echo 'start script'
+  - init: pip install -r requirements.txt
+    command: python ./src/app.py
 
 # List the ports to expose. Learn more https://www.gitpod.io/docs/config-ports/
 ports:
-  - port: 3000
+  - port: 8080
     onOpen: open-preview
